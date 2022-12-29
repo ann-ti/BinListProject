@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="2dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/numberCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLength="21"
+            android:textAppearance="@style/Text.Medium.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0000 0000 0000 0000" />
+
+        <TextView
+            android:id="@+id/schema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.LightItalic.12"
+            app:layout_constraintBottom_toBottomOf="@+id/numberCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/numberCard"
+            tools:text="schema" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency:"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Text.Regular.12"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberCard" />
+
+        <TextView
+            android:id="@+id/currencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Text.Medium.12"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/currency"
+            app:layout_constraintTop_toBottomOf="@+id/numberCard"
+            tools:text="Value" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Country:"
+            android:textAppearance="@style/Text.Regular.12"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currency" />
+
+        <TextView
+            android:id="@+id/countryValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Medium.12"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/country"
+            app:layout_constraintTop_toTopOf="@+id/country"
+            tools:text="Value" />
+
+        <ImageView
+            android:id="@+id/countryEmogi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/schema" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
