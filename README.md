@@ -22,5 +22,5 @@ Demo:
 
 <p align="center">
 <img src='screens/binlist_project_2.jpg' width='25%'/>
-<img src='screens/binlist_project.gif' width='25%'/>
+<img src='screens/binlist_project.jpg' width='25%'/>
 </p>
